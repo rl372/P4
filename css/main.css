@@ -1,0 +1,219 @@
+/* the styles for the elements */
+/*DEVELOPER: Roger Lin, IS117-101, Fall, 2021 */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: rgb(191, 243, 250);
+
+}
+.container-fluid {
+	padding-bottom: 15px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 1400px;
+	margin: 0 auto;
+	border: 3px solid #3a4ceb;
+	background-color: #ffffff;
+}
+
+.column {
+	float: left;
+	width: 33%;
+	padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  /* Style the counter cards */
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+  }
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #3a4ceb;
+	padding: 1.5em 0 2em 0;
+	background-image: linear-gradient(
+	30deg, #6372fd 0%, #ffd6a8 30%, rgb(218, 118, 118) 50%, #f1dcc2 80%, #a55c04 100%);
+}
+header img {
+	float: left;
+}
+
+header h2 {
+	font-size: 175%;
+	color: #0b0716;
+	padding-top: 30px;
+
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	top: 0;
+	overflow: hidden;
+}
+  
+header li {
+	float: left;
+}
+  
+header li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+  
+header li a:hover, .dropdown:hover .dropbtn {
+	background-color: #3a4ceb;
+}
+  
+header li.dropdown {
+	display: inline-block;
+}
+  
+header .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+header .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+  
+header .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+header .dropdown:hover .dropdown-content {
+	display: block;
+}
+/* the styles for the section */
+main {
+	clear: left;
+	padding: 0 30px;
+}
+main h1 {
+	font-size: 150%;
+	border-top: 3px solid #3a4ceb;
+	border-bottom: 3px solid #3a4ceb;
+	padding: .5em 0 .5em 2em;
+}
+
+main h2 {
+	font-size: 130%;
+	color: #001e80;
+	padding: .5em 0 .25em 0;
+}
+
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main img {
+	padding-bottom: 1em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main ul {
+	padding: 0 0 .25em 1.25em;
+}
+main li {
+	padding-bottom: .35em;
+}
+.card {
+	width: 400px;
+	border: 3px solid #5c3539;
+
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+  
+input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+  
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+  
+.container {
+	border-radius: 5px;
+	background-color: #f8f0f0;
+	padding: 20px;
+}
+/* the styles for the footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	background-color: #145a93;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+a:focus {
+	font-style: italic;
+}
+
+a:hover {
+	font-style: italic;
+}
